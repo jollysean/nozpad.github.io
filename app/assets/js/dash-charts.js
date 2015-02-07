@@ -1,4 +1,5 @@
-﻿/*** First Chart in Dashboard page ***/
+﻿
+/*** First Chart in Dashboard page ***/
 
 	$(document).ready(function() {
 		info = new Highcharts.Chart({
@@ -71,7 +72,7 @@
 				shadow: false,	
 				type: 'pie',
 				name: 'SiteInfo',
-				innerSize: '65%',
+				innerSize: '85%',
 				data: [
 					{ name: 'Used', y: 65.0, color: '#fa1d2d' },
 					{ name: 'Rest', y: 35.0, color: '#3d3d3d' }
