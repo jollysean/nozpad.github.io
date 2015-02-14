@@ -22,7 +22,7 @@
 
     <link rel="stylesheet" href="css/freeze.css">
     <script type="text/javascript" src="js/modernizr.custom.32033.js"></script>
-    <script type="text/javascript">
+    <!--script type="text/javascript">
         function showRecaptcha(element) {
           Recaptcha.create('6LdMDAITAAAAAGRO2JDLmcLQidoG_0OOzliFUJ9D', element, {
             theme: 'custom', // you can pick another at https://developers.google.com/recaptcha/docs/customization
@@ -71,7 +71,7 @@
           }
         }
 </script>
-<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src='https://www.google.com/recaptcha/api.js'></script-->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -649,19 +649,19 @@
                     <div class="col-md-12">
                         <div class="row">
                             <div class="col-md-8 col-sm-8 scrollpoint sp-effect1">
-                                <form role="form" id="contact-form" class="contact-form" method="post" data-success="Message successfully sent!">
+                                <form role="form" id="contact-form" class="contact-form" action="http://formspree.io/support@nozpad.com" data-success="Message successfully sent!">
                                     <div class="form-group">
                                   <!-- label for="name">Name</label-->
                                   <input id="name" type="text" name="name" class="field form-control" placeholder="Name" required  /><br/>
                                     </div>
                                   <!-- label for="email">E-mail</label -->
                                   <div class="form-group">
-                                  <input id="email" type="email" name="email" class="field form-control" placeholder="Email"  required /><br/>
+                                  <input id="email" type="email" name="_replyto" class="field form-control" placeholder="Email"  required /><br/>
                                   </div>
-
+                                  <input type="text" name="_gotcha" style="display:none" />
                                   <!--label for="subject">Subject</label-->
                                   <div class="form-group">
-                                  <input id="subject" type="text" name="subject" class="field form-control" placeholder="Subject"  required /><br/>
+                                  <input id="subject" type="text" name="_subject" class="field form-control" placeholder="Subject"  required /><br/>
                               </div>
 
                                   
