@@ -21,57 +21,55 @@
     <link rel="stylesheet" href="js/rs-plugin/css/settings.css">
 
     <link rel="stylesheet" href="css/freeze.css">
-
-
     <script type="text/javascript" src="js/modernizr.custom.32033.js"></script>
     <script type="text/javascript">
-function showRecaptcha(element) {
-  Recaptcha.create('6LdMDAITAAAAAGRO2JDLmcLQidoG_0OOzliFUJ9D', element, {
-    theme: 'custom', // you can pick another at https://developers.google.com/recaptcha/docs/customization
-    custom_theme_widget: 'recaptcha_widget'
-  });
-}
-
-function setupRecaptcha() {
-  var contactFormHost = 'nozpad-contact-form.herokuapp.com',
-      form = $('#contact-form'),
-      notice = form.find('#notice');
-
-  if (form.length) {
-    showRecaptcha('recaptcha_widget');
-
-    form.submit(function(ev){
-      ev.preventDefault();
-
-      $.ajax({
-        type: 'POST',
-        url: contactFormHost + 'send_email',
-        data: form.serialize(),
-        dataType: 'json',
-        success: function(response) {
-          switch (response.message) {
-            case 'success':
-              form.fadeOut(function() {
-                form.html('<h4>' + form.data('success') + '</h4>').fadeIn();
-              });
-              break;
-
-            case 'failure_captcha':
-              showRecaptcha('recaptcha_widget');
-              notice.text(notice.data('captcha-failed')).fadeIn();
-              break;
-
-            case 'failure_email':
-              notice.text(notice.data('error')).fadeIn();
-          }
-        },
-        error: function(xhr, ajaxOptions, thrownError) {
-          notice.text(notice.data('error')).fadeIn();
+        function showRecaptcha(element) {
+          Recaptcha.create('6LdMDAITAAAAAGRO2JDLmcLQidoG_0OOzliFUJ9D', element, {
+            theme: 'custom', // you can pick another at https://developers.google.com/recaptcha/docs/customization
+            custom_theme_widget: 'recaptcha_widget'
+          });
         }
-      });
-    });
-  }
-}
+
+        function setupRecaptcha() {
+          var contactFormHost = 'https://nozpad-contact-form.herokuapp.com/',
+              form = $('#contact-form'),
+              notice = form.find('#notice');
+
+          if (form.length) {
+            showRecaptcha('recaptcha_widget');
+
+            form.submit(function(ev){
+              ev.preventDefault();
+
+              $.ajax({
+                type: 'POST',
+                url: contactFormHost + 'send_email',
+                data: form.serialize(),
+                dataType: 'json',
+                success: function(response) {
+                  switch (response.message) {
+                    case 'success':
+                      form.fadeOut(function() {
+                        form.html('<h4>' + form.data('success') + '</h4>').fadeIn();
+                      });
+                      break;
+
+                    case 'failure_captcha':
+                      showRecaptcha('recaptcha_widget');
+                      notice.text(notice.data('captcha-failed')).fadeIn();
+                      break;
+
+                    case 'failure_email':
+                      notice.text(notice.data('error')).fadeIn();
+                  }
+                },
+                error: function(xhr, ajaxOptions, thrownError) {
+                  notice.text(notice.data('error')).fadeIn();
+                }
+              });
+            });
+          }
+        }
 </script>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -690,7 +688,7 @@ function setupRecaptcha() {
                                   <button class="btn btn-primary btn-lg" type="submit">Send</button>
                                 </form>
 
-                                <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+                                <script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
 
                             </div>
 
