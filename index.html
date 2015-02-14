@@ -71,6 +71,7 @@
           }
         }
 </script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -651,7 +652,7 @@
                                 <form role="form" id="contact-form" class="contact-form" method="post" data-success="Message successfully sent!">
                                     <div class="form-group">
                                   <!-- label for="name">Name</label-->
-                                  <input id="name" type="text" name="name" class="field form-control" placeholder="Name" required autofocus /><br/>
+                                  <input id="name" type="text" name="name" class="field form-control" placeholder="Name" required  /><br/>
                                     </div>
                                   <!-- label for="email">E-mail</label -->
                                   <div class="form-group">
@@ -667,8 +668,8 @@
                                   <div class="form-group">
                                   <label for="message">Message</label>
                                   <textarea cols="30" rows="10" class="form-control" placeholder="Your message" id="message" name="message" required ></textarea><br/>
-                                  </div
-                                  <label for="recaptcha_response_field">Captcha</label>
+                                  </div>
+                                  <!-- label for="recaptcha_response_field">Captcha</label-->
                                   <div id="recaptcha_widget" class="recaptcha">
                                     <div class="image">
                                       <div id="recaptcha_image"></div>
