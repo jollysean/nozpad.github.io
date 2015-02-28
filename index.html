@@ -26,56 +26,7 @@
 
     <link rel="stylesheet" href="css/freeze.css">
     <script type="text/javascript" src="js/modernizr.custom.32033.js"></script>
-    <!--script type="text/javascript">
-        function showRecaptcha(element) {
-          Recaptcha.create('6LdMDAITAAAAAGRO2JDLmcLQidoG_0OOzliFUJ9D', element, {
-            theme: 'custom', // you can pick another at https://developers.google.com/recaptcha/docs/customization
-            custom_theme_widget: 'recaptcha_widget'
-          });
-        }
-
-        function setupRecaptcha() {
-          var contactFormHost = 'https://nozpad-contact-form.herokuapp.com/',
-              form = $('#contact-form'),
-              notice = form.find('#notice');
-
-          if (form.length) {
-            showRecaptcha('recaptcha_widget');
-
-            form.submit(function(ev){
-              ev.preventDefault();
-
-              $.ajax({
-                type: 'POST',
-                url: contactFormHost + 'send_email',
-                data: form.serialize(),
-                dataType: 'json',
-                success: function(response) {
-                  switch (response.message) {
-                    case 'success':
-                      form.fadeOut(function() {
-                        form.html('<h4>' + form.data('success') + '</h4>').fadeIn();
-                      });
-                      break;
-
-                    case 'failure_captcha':
-                      showRecaptcha('recaptcha_widget');
-                      notice.text(notice.data('captcha-failed')).fadeIn();
-                      break;
-
-                    case 'failure_email':
-                      notice.text(notice.data('error')).fadeIn();
-                  }
-                },
-                error: function(xhr, ajaxOptions, thrownError) {
-                  notice.text(notice.data('error')).fadeIn();
-                }
-              });
-            });
-          }
-        }
-</script>
-<script src='https://www.google.com/recaptcha/api.js'></script-->
+    
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -189,7 +140,7 @@
                             <img src="img/demo/adventure.png" alt="nozpad eyewears">
                         </div>
 
-                        <div class="tp-caption lfb visible-xs" data-x="center" data-y="center" data-hoffset="0" data-voffset="400" data-speed="1000" data-start="1200" data-easing="Power4.easeOut">                            <a href="/ioh.html" class="btn btn-primary inverse btn-lg">Subscribe ADVENTURE ß(beta) Program</a>
+                        <div class="tp-caption lfb visible-xs" data-x="center" data-y="center" data-hoffset="0" data-voffset="400" data-speed="1000" data-start="1200" data-easing="Power4.easeOut">                            <a href="/adventure.html" class="btn btn-primary inverse btn-lg">Subscribe ADVENTURE ß(beta) Program</a>
                         </div>
 
                         
