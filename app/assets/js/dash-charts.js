@@ -27,11 +27,11 @@
 				borderColor: '#F1F3EB',
 				shadow: false,	
 				type: 'pie',
-				name: 'Income',
+				name: 'Breath',
 				innerSize: '65%',
 				data: [
-					{ name: 'load percentage', y: 45.0, color: '#b2c831' },
-					{ name: 'rest', y: 55.0, color: '#3d3d3d' }
+					{ name: 'load percentage', y: 60.0, color: '#b2c831' },
+					{ name: 'rest', y: 40.0, color: '#3d3d3d' }
 				],
 				dataLabels: {
 					enabled: false,
@@ -39,9 +39,23 @@
 					connectorColor: '#000000'
 				}
 			}]
+
+			
+			
+
 		});
+		reshort();
 		
 	});
+
+/*****************************************/
+function reshort() {
+	//if(c == null) return;
+	setTimeout(reshort, 2000);
+	
+		
+	}
+
 
 /*** second Chart in Dashboard page ***/
 
