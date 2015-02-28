@@ -23,56 +23,7 @@
 
     <link rel="stylesheet" href="css/freeze.css">
     <script type="text/javascript" src="js/modernizr.custom.32033.js"></script>
-    <!--script type="text/javascript">
-        function showRecaptcha(element) {
-          Recaptcha.create('6LdMDAITAAAAAGRO2JDLmcLQidoG_0OOzliFUJ9D', element, {
-            theme: 'custom', // you can pick another at https://developers.google.com/recaptcha/docs/customization
-            custom_theme_widget: 'recaptcha_widget'
-          });
-        }
-
-        function setupRecaptcha() {
-          var contactFormHost = 'https://nozpad-contact-form.herokuapp.com/',
-              form = $('#contact-form'),
-              notice = form.find('#notice');
-
-          if (form.length) {
-            showRecaptcha('recaptcha_widget');
-
-            form.submit(function(ev){
-              ev.preventDefault();
-
-              $.ajax({
-                type: 'POST',
-                url: contactFormHost + 'send_email',
-                data: form.serialize(),
-                dataType: 'json',
-                success: function(response) {
-                  switch (response.message) {
-                    case 'success':
-                      form.fadeOut(function() {
-                        form.html('<h4>' + form.data('success') + '</h4>').fadeIn();
-                      });
-                      break;
-
-                    case 'failure_captcha':
-                      showRecaptcha('recaptcha_widget');
-                      notice.text(notice.data('captcha-failed')).fadeIn();
-                      break;
-
-                    case 'failure_email':
-                      notice.text(notice.data('error')).fadeIn();
-                  }
-                },
-                error: function(xhr, ajaxOptions, thrownError) {
-                  notice.text(notice.data('error')).fadeIn();
-                }
-              });
-            });
-          }
-        }
-</script>
-<script src='https://www.google.com/recaptcha/api.js'></script-->
+    
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -147,14 +98,14 @@
                 <div class="section-heading inverse scrollpoint sp-effect3">
                     <h1> </h1>
                     <div class="divider"></div>
-                    <h1> Internet of Health Powered by 2-D Breathing.
-                     Subscribe for updates.</h1>
+                    <h1> Nozpad Workout Alarms.</h1>
+                     <h1>In ADVENTURE - Powerful Smart Glass.</h1>
                 </div>
                 
                 <div class="row">
                     <div class="col-md-12">
                         <div  class="hanging-phone scrollpoint sp-effect2 hidden-xs">
-                           <a href="http://shop.nozpad.com"> <img height="370" src="img/demo/adventure.png" alt="nozpad app for android ios windows"/> </a>
+                           <a href="http://shop.nozpad.com"> <img height="370" src="img/freeze/Slides/Banner.png" alt="nozpad app for android ios windows"/> </a>
                         </div>
                         <!--div class="platforms">
                             <a href="#" class="btn btn-primary inverse scrollpoint sp-effect1">
@@ -213,7 +164,7 @@
         <section id="ioh" class="doublediagonal">
             <div class="container">
                 <div class="section-heading scrollpoint sp-effect3">
-                    <h1 style="color:#fff">Subscribe: #InternetOfHealth</h1>
+                    <h1 style="color:#fff">Subscribe: Adventure Beta</h1>
                     <div class="divider"></div>
                     
                 </div>
