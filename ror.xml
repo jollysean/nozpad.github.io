@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://www.nozpad.com/</title>
+  <link>http://www.nozpad.com/</link>
+
+<item>
+     <link>http://www.nozpad.com/</link>
+     <title>Nozpad | Breath Taking Experience</title>
+     <description>Nozpad is nose and eye wearable breath tracking device for live health monitoring through upper respiration rate and rhythm measurement to find variations and early warning in health systems.</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://www.nozpad.com/app/web.html</link>
+     <title>Nozpad</title>
+     <description>Nozpad</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://www.nozpad.com/adventure.html</link>
+     <title>Nozpad | Breath Taking Experience</title>
+     <description>Nozpad | Breath Taking Experience</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://www.nozpad.com/ioh.html</link>
+     <title>Nozpad | Breath Taking Experience</title>
+     <description>Nozpad | Breath Taking Experience</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://www.nozpad.com/breeze.html</link>
+     <title>Nozpad | Breath Taking Experience</title>
+     <description>Nozpad is nose and eye wearable breath tracking device for live health monitoring through upper respiration rate and rhythm measurement to find variations and early warning in health systems.</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://www.nozpad.com/solo.html</link>
+     <title>Nozpad | Breath Taking Experience</title>
+     <description>Nozpad is nose and eye wearable breath tracking device for live health monitoring through upper respiration rate and rhythm measurement to find variations and early warning in health systems.</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://www.nozpad.com/ts/privacy.html</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://www.nozpad.com/ts/refund.html</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://www.nozpad.com/ts/tos.html</link>
+     <title></title>
+     
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://www.nozpad.com/index.html</link>
+     <title>Nozpad | Breath Taking Experience</title>
+     <description>Nozpad is nose and eye wearable breath tracking device for live health monitoring through upper respiration rate and rhythm measurement to find variations and early warning in health systems.</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
